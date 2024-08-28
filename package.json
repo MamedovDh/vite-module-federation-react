@@ -1,0 +1,14 @@
+{
+  "name": "vite-module-federation-react",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+      "build": "pnpm --parallel --filter \"./**\" build",
+      "serve": "pnpm --parallel --filter \"./**\" preview",
+      "build:remotes": "pnpm --parallel --filter \"./remote\" build",
+      "serve:remotes": "pnpm --parallel --filter \"./remote\" serve",
+      "dev:hosts": "pnpm --filter \"./host\" dev",
+      "stop": "kill-port --port 5000,5001"
+    },
+  "author": "noda"
+}
