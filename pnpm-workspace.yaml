@@ -1,1 +1,1 @@
-packages : ['host', 'remote']
+packages : ['services/host', 'services/remote']
